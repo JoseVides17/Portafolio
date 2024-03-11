@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <nav>
+                    <ul>
+                        <li><a href="#about">Acerca de Mí</a></li>
+                        <li><a href="#projects">Proyectos</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <img src="/img/perfil.jpeg" alt="" class="profile-image">
+        </header>
+
+        <section id="about">
+            <h2>Acerca de Mí</h2>
+            <p>Hola, ¡bienvenido a mi portafolio! Soy Jose German Vides Baron, un apasionado desarrollador con
+                experiencia en diseño y desarrollo de APIs en java.</p>
+
+            <p>Obtuve mi título de tecnoco laboral en habilidades de programacion de aplicaciones moviles en la
+                Universidad Autonoma de Bucaramanga en convenio con MinTic, donde adquirí una sólida base en
+                programación y desarrollo de software. Desde entonces, he trabajado en varios proyectos personales que
+                me han permitido expandir mis habilidades y conocimientos en el campo.</p>
+
+            <p>Me especializo en tecnologías web del lado del Backend. He trabajado con frameworks como spring boot en
+                la realizacion de apis.</p>
+
+            <p>Además de mi trabajo en desarrollo web, también soy un entusiasta de la tecnología y estoy constantemente
+                explorando nuevas tecnologías y herramientas para mejorar mis habilidades y mantenerme al día con las
+                últimas tendencias.</p>
+
+            <p>En mi tiempo libre, me gusta participar en eventos de la comunidad de desarrolladores de mi ciudad. Estoy
+                emocionado por la oportunidad de trabajar en proyectos desafiantes y colaborar con equipos talentosos
+                para crear experiencias web excepcionales.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Proyectos</h2>
+            <div class="project-container">
+                <div class="project-card">
+                    <h3>Proyecto 1</h3>
+                    <p>Descripción del proyecto 1...</p>
+                    <img src="proyecto1.png" alt="Captura de pantalla del Proyecto 1">
+                    <a href="enlace-al-proyecto-1" class="button">Ver proyecto</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Proyecto 2</h3>
+                    <p>Descripción del proyecto 2...</p>
+                    <img src="proyecto2.png" alt="Captura de pantalla del Proyecto 2">
+                    <a href="enlace-al-proyecto-2" class="button">Ver proyecto</a>
+                </div>
+                <div class="project-card">
+                    <h3>Proyecto 3</h3>
+                    <p>Descripción del proyecto 3...</p>
+                    <img src="proyecto3.png" alt="Captura de pantalla del Proyecto 3">
+                    <a href="enlace-al-proyecto-3" class="button">Ver proyecto</a>
+                </div>
+                <div class="project-card">
+                    <h3>Proyecto 4</h3>
+                    <p>Descripción del proyecto 4...</p>
+                    <img src="proyecto4.png" alt="Captura de pantalla del Proyecto 4">
+                    <a href="enlace-al-proyecto-4" class="button">Ver proyecto</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form id="contact-form" action="send-email.php" method="POST">
+              <label for="name">Nombre:</label>
+              <input type="text" id="name" name="name" required>
+              
+              <label for="email">Correo electrónico:</label>
+              <input type="email" id="email" name="email" required>
+              
+              <label for="message">Mensaje:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+              
+              <button type="submit">Enviar</button>
+            </form>
+          </section>          
+
+        <footer>
+            <a href="#" id="back-to-top" class="back-to-top"></a>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

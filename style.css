@@ -1,0 +1,194 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    background-color: cadetblue;
+    color: #fff;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 0px;
+    padding: 20px;
+  }
+  
+  nav ul li:hover {
+    transform: translateY(-3px); /* Mover el elemento hacia arriba cuando el cursor esté sobre él */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Añadir una sombra para resaltar el elemento */
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s; /* Agregar una transición para un efecto suave */
+  }
+  
+  /* Estilos para las secciones */
+  section {
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Estilos para los títulos de sección */
+  h2 {
+    color: gray;
+  }
+
+  h1{
+    color: white;
+    text-align: center;
+  }
+  
+  /* Estilos para el formulario de contacto (si lo hay) */
+  #contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  #contact-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #contact-form input,
+  #contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  #contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  #contact-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  #projects {
+    padding-bottom: 20px; /* Ajusta el espacio entre el título y las tarjetas */
+  }
+
+  .header-content {
+    flex: 1; /* Hace que ocupe el espacio restante */
+  }
+
+  .profile-image {
+    position: absolute; /* Ajusta la posición absoluta */
+    top: 0; /* Coloca la imagen en la parte superior del nav */
+    right: 0; /* Coloca la imagen en el extremo derecho del nav */
+    width: 100px; /* Ancho de la imagen */
+    height: 100px; /* Altura de la imagen */
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+  }
+
+  .profile-image:hover {
+    transform: scale(1.2); /* Escala la imagen al 120% cuando pasas el cursor sobre ella */
+  }
+
+  .back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Hace que el botón sea circular */
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .back-to-top:hover {
+    background-color: #0056b3; /* Cambia el color al pasar el ratón */
+  }
+  
+  .back-to-top:before {
+    content: '↑'; /* Flecha hacia arriba */
+    position: relative;
+    top: -3px; /* Ajusta la posición vertical de la flecha */
+  }
+  
+  .container {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    padding: 20px; /* Añade relleno alrededor del contenido */
+  }
+  
+  .project-container {
+    display: flex; /* Establece el contenedor como flexbox */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas si no caben en una sola */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+  }
+  
+  .project-card {
+    background-color: #ecf0f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 250px;
+  }
+  
+  .project-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .project-card h3 {
+    color: #333;
+  }
+  
+  .project-card p {
+    color: #666;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px); /* Mover la tarjeta hacia arriba cuando el cursor esté sobre ella */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Añadir una sombra para resaltar la tarjeta */
+  }
+  
+  .project-card .button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .project-card .button:hover {
+    background-color: #0056b3;
+  }
+  
