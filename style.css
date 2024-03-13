@@ -1,10 +1,11 @@
 /* Estilos generales */
 body {
-  background-color: #f0f0f0;
+  background-color: gray;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
+
 
 /* Estilos para el formulario */
 form {
@@ -36,11 +37,12 @@ form textarea {
 header {
   display: flex;
   align-items: center;
-  background-color: cadetblue;
+  background-color: #343a40;
   color: #fff;
 }
 
 nav {
+  padding: 10px;
   display: flex;
   align-items: center;
   position: relative;
@@ -67,6 +69,7 @@ nav ul li:hover {
   /* Mover el elemento hacia arriba cuando el cursor esté sobre él */
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   /* Añadir una sombra para resaltar el elemento */
+  background-color: gray;
 }
 
 nav ul li a {
@@ -83,8 +86,20 @@ section {
 }
 
 /* Estilos para los títulos de sección */
+
 h2 {
-  color: gray;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-size: 5em;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease-out;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.6;
+  animation: fadeInUp 1s ease-out;
 }
 
 h1 {
@@ -97,30 +112,13 @@ h1 {
   padding: 50px 0; /* Espaciado interno */
 }
 
-/* Estilos para el contenido de la sección */
-#about p {
-  font-size: 16px; /* Tamaño de fuente */
-  line-height: 1.6; /* Altura de línea */
-  color: #333333; /* Color del texto */
-}
-
-/* Estilos para el título de la sección */
-#about h2 {
-  font-size: 24px; /* Tamaño de fuente */
-  color: #000000; /* Color del texto */
-  margin-bottom: 20px; /* Espaciado inferior */
-}
-
-/* Estilos para los elementos destacados */
-#about .highlight {
-  font-weight: bold; /* Texto en negrita */
-  color: #007bff; /* Color de resaltado */
-}
-
-
 /* Estilos para el formulario de contacto (si lo hay) */
 #contact-form {
-  max-width: 400px;
+  background-color: silver;
+  color: white;
+  text-align: left;
+  font-size: 24px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -153,6 +151,12 @@ h1 {
   padding: 50px 0; /* Espaciado interno */
 }
 
+.about-section {
+  background-color: #343a40;
+  color: #c9d1d9;
+  padding: 80px 0;
+}
+
 .header-content {
   flex: 1;
   /* Hace que ocupe el espacio restante */
@@ -160,20 +164,14 @@ h1 {
 
 .profile-image {
   position: absolute;
-  /* Ajusta la posición absoluta */
-  top: 0;
-  /* Coloca la imagen en la parte superior del nav */
-  right: 0;
-  /* Coloca la imagen en el extremo derecho del nav */
-  width: 100px;
-  /* Ancho de la imagen */
-  height: 100px;
-  /* Altura de la imagen */
-  border-radius: 50%;
-  margin-left: auto;
-  margin-right: 20px;
-  transition: transform 0.3s ease;
+  top: -15px; /* Ajusta esta cantidad según sea necesario */
+  right: 20px; /* Ajusta la posición horizontal */
+  width: 110px; /* Ancho de la imagen */
+  height: 110px; /* Altura de la imagen */
+  border-radius: 50%; /* Hace que la imagen sea circular */
+  z-index: 1; /* Asegura que la imagen esté por encima del contenido */
 }
+
 
 .profile-image:hover {
   transform: scale(1.2);
@@ -183,14 +181,13 @@ h1 {
 .back-to-top {
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 30px;
+  right: 30px;
   background-color: #007bff;
   color: #fff;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  /* Hace que el botón sea circular */
   text-align: center;
   line-height: 50px;
   font-size: 20px;
@@ -204,6 +201,7 @@ h1 {
 }
 
 .back-to-top:before {
+  font: bold;
   content: '↑';
   /* Flecha hacia arriba */
   position: relative;
@@ -212,54 +210,26 @@ h1 {
 }
 
 .container {
-  max-width: 1200px;
-  /* Ancho máximo del contenedor */
+  background-color: slategray;
+  padding: 30px;
+  max-width: 700px;
   margin: 0 auto;
-  /* Centra el contenedor en la página */
-  padding: 20px;
-  /* Añade relleno alrededor del contenido */
-}
-
-.project-container {
-  display: flex;
-  /* Establece el contenedor como flexbox */
-  flex-wrap: wrap;
-  /* Permite que los elementos se envuelvan en varias líneas si no caben en una sola */
-  justify-content: space-between;
-  /* Distribuye el espacio entre los elementos */
+  text-align: center;
 }
 
 .project-card {
-  background-color: #ffffff; /* Color de fondo */
-  border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
-  padding: 20px; /* Espaciado interno */
-  margin-bottom: 20px; /* Espaciado inferior */
-  transition: box-shadow 0.3s; /* Transición suave para la sombra */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Coloca el contenido alrededor, distribuyendo el espacio de manera uniforme */
-  height: 100%;
+  background-color: #343a40; /* Color de fondo oscuro */
+  color: #fff; /* Color de texto blanco para mayor contraste */
+  font-family: 'Arial', sans-serif; /* Tipo de letra */
+  padding: 20px; /* Ajusta el espaciado interior según sea necesario */
+  border-radius: 10px; /* Radio de borde */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
 }
+
 .project-card img {
   max-width: 450px;
   height: 250px;
   margin-bottom: 10px;
-}
-
-.project-card h3 {
-  color: #333333; /* Color del texto */
-}
-
-/* Estilos para la descripción de la tarjeta */
-.project-card p {
-  color: #666666; /* Color del texto */
-}
-.project-card:hover {
-  transform: translateY(-5px);
-  /* Mover la tarjeta hacia arriba cuando el cursor esté sobre ella */
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
-  /* Añadir una sombra para resaltar la tarjeta */
 }
 
 .project-card .button {
@@ -303,4 +273,15 @@ h1 {
   /* Mover la tarjeta hacia arriba cuando el cursor esté sobre ella */
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
   /* Añadir una sombra para resaltar la tarjeta */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

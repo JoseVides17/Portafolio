@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Personal</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
@@ -18,92 +20,113 @@
                         <li><a href="#projects">Proyectos</a></li>
                         <li><a href="#contact">Contacto</a></li>
                     </ul>
+                    <img src="/img/perfil.jpeg" alt="" class="profile-image">
                 </nav>
             </div>
-            <img src="/img/perfil.jpeg" alt="" class="profile-image">
         </header>
 
-        <section id="about">
-            <h2>Acerca de Mí</h2>
-            <p>Hola, ¡bienvenido a mi portafolio! Soy Jose German Vides Baron, un apasionado desarrollador con
-                experiencia en diseño y desarrollo de APIs en java.</p>
+        <section id="about" class="about-section">
+                <h2>Acerca de Mí</h2>
+                <p>Hola, ¡bienvenido a mi portafolio! Soy Jose German Vides Baron, un apasionado desarrollador con
+                    experiencia en diseño y desarrollo de APIs en java.</p>
 
-            <p>Obtuve mi título de tecnoco laboral en habilidades de programacion de aplicaciones moviles en la
-                Universidad Autonoma de Bucaramanga en convenio con MinTic, donde adquirí una sólida base en
-                programación y desarrollo de software. Desde entonces, he trabajado en varios proyectos personales que
-                me han permitido expandir mis habilidades y conocimientos en el campo.</p>
+                <p>Obtuve mi título de tecnoco laboral en habilidades de programacion de aplicaciones moviles en la
+                    Universidad Autonoma de Bucaramanga en convenio con MinTic, donde adquirí una sólida base en
+                    programación y desarrollo de software. Desde entonces, he trabajado en varios proyectos personales
+                    que
+                    me han permitido expandir mis habilidades y conocimientos en el campo.</p>
 
-            <p>Me especializo en tecnologías web del lado del Backend. He trabajado con frameworks como spring boot en
-                la realizacion de apis.</p>
-
-            <p>Además de mi trabajo en desarrollo web, también soy un entusiasta de la tecnología y estoy constantemente
-                explorando nuevas tecnologías y herramientas para mejorar mis habilidades y mantenerme al día con las
-                últimas tendencias.</p>
-
-            <p>En mi tiempo libre, me gusta participar en eventos de la comunidad de desarrolladores de mi ciudad. Estoy
-                emocionado por la oportunidad de trabajar en proyectos desafiantes y colaborar con equipos talentosos
-                para crear experiencias web excepcionales.</p>
+                <p>Me especializo en tecnologías web del lado del Backend. He trabajado con frameworks como spring boot
+                    en
+                    la realizacion de apis.</p>
         </section>
 
         <section id="projects">
             <h2>Proyectos</h2>
-            <div class="project-container">
-                <div class="project-card">
-                    <h3>Consecionario App React</h3>
-                    <p>Aplicacion creada utilizando en framework React.</p>
-                    <img src="/img/consecionarioApp.png" alt="Captura de pantalla del Proyecto 1">
-                    <a href="https://github.com/JoseVides17/consecionario-app-react.git" class="button">Ver proyecto</a>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="project-card">
+                            <h3>Consecionario App React</h3>
+                            <p>Aplicacion creada utilizando en framework React.</p>
+                            <img src="/img/consecionarioApp.png" alt="Captura de pantalla del Proyecto 1">
+                            <a href="https://github.com/JoseVides17/consecionario-app-react.git" class="button">Ver
+                                proyecto</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="project-card">
+                            <h3>Recursos Humanos React</h3>
+                            <p>Sistema de gestion de empleados con React.</p>
+                            <img src="/img/consecionarioApp.png" alt="Captura de pantalla del Proyecto 2">
+                            <a href="https://github.com/JoseVides17/recursos_humanos_app-react.git" class="button">Ver
+                                proyecto</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="project-card">
+                            <h3>Consecionario Spring Boot</h3>
+                            <p>Backend del consecionario Spring Boot</p>
+                            <img src="/img/consecionarioSpring.png" alt="Captura de pantalla del Proyecto 3">
+                            <a href="https://github.com/JoseVides17/consecionario-app-spring.git" class="button">Ver
+                                proyecto</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="project-card">
+                            <h3>Recursos Humanos Spring Boot</h3>
+                            <p>Backend del sistema de Recursos Humanos.</p>
+                            <img src="/img/rhSpring.png" alt="Captura de pantalla del Proyecto 4">
+                            <a href="https://github.com/JoseVides17/RecursosHumanos.git" class="button">Ver proyecto</a>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="project-card">
-                    <h3>Recursos Humanos React</h3>
-                    <p>Sistema de gestion de empleados con React.</p>
-                    <img src="/img/consecionarioApp.png" alt="Captura de pantalla del Proyecto 2">
-                    <a href="https://github.com/JoseVides17/recursos_humanos_app-react.git" class="button">Ver proyecto</a>
-                </div>
-                <div class="project-card">
-                    <h3>Consecionario Spring Boot</h3>
-                    <p>Backend del consecionario Spring Boot</p>
-                    <img src="/img/consecionarioSpring.png" alt="Captura de pantalla del Proyecto 3">
-                    <a href="https://github.com/JoseVides17/consecionario-app-spring.git" class="button">Ver proyecto</a>
-                </div>
-                <div class="project-card">
-                    <h3>Recursos Humanos Spring Boot</h3>
-                    <p>Backend del sistema de Recursos Humanos.</p>
-                    <img src="/img/rhSpring.png" alt="Captura de pantalla del Proyecto 4">
-                    <a href="https://github.com/JoseVides17/RecursosHumanos.git" class="button">Ver proyecto</a>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
 
         <section id="contact">
             <h2>Contacto</h2>
             <form id="contact-form" action="send-email.php" method="POST">
-              <label for="name">Nombre:</label>
-              <input type="text" id="name" name="name" required>
-              
-              <label for="email">Correo electrónico:</label>
-              <input type="email" id="email" name="email" required>
-              
-              <label for="message">Mensaje:</label>
-              <textarea id="message" name="message" rows="4" required></textarea>
-              
-              <button type="submit">Enviar</button>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
             </form>
-          </section>          
+        </section>
 
         <footer>
             <a href="#" id="back-to-top" class="back-to-top"></a>
             <div class="container" style="padding-top: 50px;">
                 <ul class="social-links">
-                    <li><a href="http://www.linkedin.com/in/jose-german-vides-baron-7281402aa" target="_blank"><img src="/img/linkedin.png" alt="LinkedIn"></a></li>
-                    <li><a href="https://github.com/JoseVides17" target="_blank"><img src="/img/github.jfif" alt="GitHub"></a></li>
+                    <li><a href="http://www.linkedin.com/in/jose-german-vides-baron-7281402aa" target="_blank"><img
+                                src="/img/linkedin.png" alt="LinkedIn"></a></li>
+                    <li><a href="https://github.com/JoseVides17" target="_blank"><img src="/img/github.jfif"
+                                alt="GitHub"></a></li>
                     <!-- Agrega más enlaces según sea necesario -->
-                  </ul>
+                </ul>
             </div>
         </footer>
     </div>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
